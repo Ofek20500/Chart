@@ -1,13 +1,13 @@
 export class BarChart {
-  actweight: number;
+  actweight: string;
   aircraft: string;
-  cbm: number;
-  chargeweight: number;
+  cbm: string;
+  chargeweight: string;
   etd: string;
   flightno : string;
   fport: string;
-  id: number;
-  income : number;
-  numofpieces: number;
+  id: string;
+  income : string;
+  numofpieces: string;
   tport: string;
   }

@@ -1,14 +1,105 @@
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-Name :<input type="text" (keyup)="onNameKeyUp($event)">
-<button (click)="getProfile()">Get Profile</button>
+<!-- Name :<input type="text" (keyup)="onNameKeyUp($event)">
+<button (click)="getProfile()">Get Profile</button> -->
+
+<div ng-app="myApp">
+<nav role="navigation">
+        <div id="menu-toggle">
+          <input type="checkbox">
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu" class="cd-accordion-menu ">
+                <li>
+                  <input type="checkbox" name="Aircraft" id="a" >
+                  <label for="a">Aircraft</label> 
+                  <ul class="drop"> 
+                      <li *ngFor="let graph of graphs; let i = index" class="style" >
+                          <a (click)="myFunction(i)" >{{graph.aircraft}}</a>
+                        </li> 
+                  </ul>
+                  
+                 
+                </li>
+              
+                <li>
+                    <input type="checkbox" name="Flight-Number" id="b" >
+                    <label for="b">Flight Number</label> 
+                    <ul class="drop">
+                            <li *ngFor="let graph of graphs; let i = index" class="style">
+                                    <a (click)="myFunction(i)">{{graph.flightno}}</a>
+                            </li>
+                    </ul>  
+                </li>
+              
+                <li>
+                    <input type="checkbox" name="Fport" id="c" >
+                    <label for="c">Fport</label> 
+                    <ul class="drop">
+                            <li *ngFor="let graph of graphs; let i = index" class="style" >
+                                    <a (click)="myFunction(i)">{{graph.fport}}</a>
+                            </li>
+                    </ul>  
+                </li>
+                
+                <li>
+                    <input type="checkbox" name="Tport" id="d" >
+                    <label for="d">Tport</label> 
+                    <ul class="drop">
+                            <li *ngFor="let graph of graphs; let i = index" class="style">
+                                    <a (click)="myFunction(i)">{{graph.tport}}</a>
+                            </li>
+                    </ul>  
+                </li>
+               
+                <li ><a id="u"  class="style" (click)="ALLFlight()">All Flights</a></li>
+               
+          </ul>
+        </div>
+    </nav>
+    <!-- <div *ngIf="selectedChart">
+            
+            <h2>{{ selectedChart.aircraft }} Details</h2>
+            <div>
+                <p>i = {{i}}</p>
+                <span>id: </span>{{selectedChart.id}}</div>
+            <div>
+              <label>name:
+                <input [(ngModel)]="selectedChart.aircraft" placeholder="name">
+              </label>
+            </div>
+           
+          </div> -->
+
+
+
 <div class="back" >
-<canvas id="myChart"  ></canvas>
-<canvas id="myChart2"  ></canvas>
-<canvas id="myChart3"  ></canvas>
-<canvas id="myChart4"  ></canvas>
-<canvas id="myChart5"  ></canvas>
-<canvas id="myChart6"  ></canvas>
+    <div id="chart1" class="res">
+         <canvas id="myChart"  ></canvas> 
+    </div> 
+
+    <div id="chart2" class="res">
+          <canvas id="myChart2"   ></canvas> 
+    </div>  
+
+    <div id="chart3">
+        <canvas id="myChart3"  ></canvas>
+    </div>
+
+    <div id="chart4">
+        <canvas id="myChart4"  ></canvas>
+    </div>
+
+    <div id="chart5">
+        <canvas id="myChart5"  ></canvas>
+    </div>
+
+    <div id="chart6"> 
+        <canvas id="myChart6"  ></canvas>
+    </div>
 </div>
-<app-charts></app-charts>
+<!-- <app-charts></app-charts>
 <app-messages></app-messages>
+ -->
+</div>
 
