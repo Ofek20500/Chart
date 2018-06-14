@@ -10,18 +10,14 @@ import { Observable } from 'rxjs';
 export class ChartService {
 
   configUrl = './assets/data/graph.json';
+  // people: Object[];
 
   constructor(private http: HttpClient) { 
 
-
-    this.getJSON().subscribe(data => {
-      console.log(data)
-  });
+ 
+  
   }
 
-  
-  public getJSON(): Observable<any> {
-    return this.http.get(this.configUrl)
-}
+
 
 }
