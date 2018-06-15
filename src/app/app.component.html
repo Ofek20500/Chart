@@ -1,9 +1,11 @@
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <!-- Name :<input type="text" (keyup)="onNameKeyUp($event)">
 <button (click)="getProfile()">Get Profile</button> -->
+<body>
 
-<div ng-app="myApp">
+<!--                                   Navigation Bar                               -->
 <nav role="navigation">
+        <img src="../assets/img/logo.png">
         <div id="menu-toggle">
           <input type="checkbox">
           <span></span>
@@ -56,50 +58,235 @@
                
           </ul>
         </div>
-    </nav>
-    <!-- <div *ngIf="selectedChart">
-            
-            <h2>{{ selectedChart.aircraft }} Details</h2>
-            <div>
-                <p>i = {{i}}</p>
-                <span>id: </span>{{selectedChart.id}}</div>
-            <div>
-              <label>name:
-                <input [(ngModel)]="selectedChart.aircraft" placeholder="name">
-              </label>
-            </div>
-           
-          </div> -->
+</nav>
+<!--End of navigation Bar-->
+
+
+<div class="wrapper">
+<!--Charts-->
+    <div id="chart1" class="box"> <!-- opening of Chart1 -->
+        <canvas id="myChart"  ></canvas>
+         <div class="table "> 
+                <table cellpadding = "5" >
+                    <tbody>
+                        <tr>
+                            <td>Flight Number      </td>
+                            <td style="width: 3rem">{{flightno1}}    </td>
+                            <td>Aircraft           </td>
+                            <td >{{aircraft1}}    </td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td>Volume Weight (CBM)</td>
+                            <td> {{cbm1}}        </td>
+                            <td>    ETD          </td>
+                            <td>   {{etd1}}      </td>
+                        </tr>
+                        <tr>
+                            <td>FPort              </td>
+                            <td>  {{fport1}}     </td>
+                            <td>TPort              </td>
+                            <td> {{tport1}}      </td>
+                        </tr>
+                        <tr>
+                            <td>Income             </td>
+                            <td > {{income1}}      </td>
+                            <td>Number of pieces   </td>
+                            <td>  {{numofpieces1}} </td>
+                        </tr>
+                    </tbody>
+                </table>
+         </div>
+    </div> <!-- Closing of Chart1 -->
 
 
 
-<div class="back" >
-    <div id="chart1" class="res">
-         <canvas id="myChart"  ></canvas> 
-    </div> 
+    <div id="chart2" class="box"><!-- opening of Chart2 -->
+          <canvas id="myChart2"   ></canvas>
+          <div class="table"> 
+                <table cellpadding = "5">
+                    <tbody>
+                        <tr>
+                            <td>Flight Number      </td>
+                            <td >{{flightno2}}    </td>
+                            <td>Aircraft           </td>
+                            <td >{{aircraft2}}    </td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td>Volume Weight (CBM)</td>
+                            <td> {{cbm2}}        </td>
+                            <td>ETD                </td>
+                            <td >   {{etd2}}      </td>
+                        </tr>
+                        <tr>
+                            <td>FPort              </td>
+                            <td>  {{fport2}}     </td>
+                            <td>TPort              </td>
+                            <td > {{tport2}}      </td>
+                        </tr>
+                        <tr>
+                            <td>Income             </td>
+                            <td > {{income2}}</td>
+                            <td>Number of pieces   </td>
+                            <td >  {{numofpieces2}}    </td>
+                        </tr>
+                    </tbody>
+                </table>
+         </div> 
+    </div> <!-- Closing of Chart2 -->
+    
 
-    <div id="chart2" class="res">
-          <canvas id="myChart2"   ></canvas> 
-    </div>  
-
-    <div id="chart3">
+    <div id="chart3" class="box"><!-- opening of Chart3 -->
         <canvas id="myChart3"  ></canvas>
-    </div>
+        <div class="table"> 
+                <table cellpadding = "5">
+                    <tbody>
+                        <tr>
+                            <td>Flight Number      </td>
+                            <td >{{flightno3}}    </td>
+                            <td>Aircraft           </td>
+                            <td >{{aircraft3}}    </td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td>Volume Weight (CBM)</td>
+                            <td> {{cbm3}}        </td>
+                            <td>ETD                </td>
+                            <td>   {{etd3}}      </td>
+                        </tr>
+                        <tr>
+                            <td>FPort              </td>
+                            <td>  {{fport3}}     </td>
+                            
+                            <td>TPort              </td>
+                            <td > {{tport3}}      </td>
+                        </tr>
+                        <tr>
+                            <td>Income             </td>
+                            <td > {{income3}}</td>
+                            <td>Number of pieces   </td>
+                            <td >  {{numofpieces3}}    </td>
+                        </tr>
+                    </tbody>
+                </table>
+         </div>
+    </div><!-- Closing of Chart3 -->
 
-    <div id="chart4">
+
+    <div id="chart4" class="box"><!-- opening of Chart4 -->
         <canvas id="myChart4"  ></canvas>
-    </div>
+        <div class="table"> 
+                <table cellpadding = "5">
+                    <tbody>
+                        <tr>
+                            <td>Flight Number      </td>
+                            <td >{{flightno4}}    </td>
+                            <td>Aircraft           </td>
+                            <td >{{aircraft4}}    </td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td>Volume Weight (CBM)</td>
+                            <td> {{cbm4}}        </td>
+                            <td>ETD                </td>
+                            <td >   {{etd4}}      </td>
+                        </tr>
+                        <tr>
+                            <td>FPort              </td>
+                            <td>  {{fport4}}     </td>
+                            <td>TPort              </td>
+                            <td > {{tport4}}      </td>
+                        </tr>
+                        <tr>
+                            <td>Income             </td>
+                            <td > {{income4}}</td>
+                            <td>Number of pieces   </td>
+                            <td >  {{numofpieces4}}    </td>
+                        </tr>
+                    </tbody>
+                </table>
+         </div>
+    </div><!-- Closing of Chart4 -->
 
-    <div id="chart5">
+
+
+    <div id="chart5" class="box"><!-- opening of Chart5 -->
         <canvas id="myChart5"  ></canvas>
-    </div>
+        <div class="table"> 
+                <table cellpadding = "5">
+                    <tbody>
+                        <tr>
+                            <td>Flight Number      </td>
+                            <td >{{flightno5}}    </td>
+                            <td>Aircraft           </td>
+                            <td >{{aircraft5}}    </td>
+                        </tr>
+                        <tr>
+                            <td>Volume Weight (CBM)</td>
+                            <td> {{cbm5}}        </td>
+                            <td>ETD                </td>
+                            <td >   {{etd5}}      </td>
+                        </tr>
+                        <tr>
+                            <td>FPort              </td>
+                            <td>  {{fport5}}     </td>
+                            <td>TPort              </td>
+                            <td > {{tport5}}      </td>
+                        </tr>
+                        <tr>
+                            <td>Income             </td>
+                            <td > {{income5}}</td>
+                            <td>Number of pieces   </td>
+                            <td >  {{numofpieces5}}    </td>
+                        </tr>
+                    </tbody>
+                </table>
+         </div>
+    </div><!-- Closing of Chart5 -->
 
-    <div id="chart6"> 
+
+    <div id="chart6" class="box"><!-- opening of Chart6 --> 
         <canvas id="myChart6"  ></canvas>
+        <div class="table"> 
+                <table cellpadding = "5">
+                    <tbody>
+                        <tr>
+                            <td>Flight Number      </td>
+                            <td >{{flightno6}}    </td>
+                            <td>Aircraft           </td>
+                            <td >{{aircraft6}}    </td>
+                        </tr>
+                        <tr>
+                            <td>Volume Weight (CBM)</td>
+                            <td> {{cbm6}}        </td>
+                            <td>ETD                </td>
+                            <td >   {{etd6}}      </td>
+                        </tr>
+                        <tr>
+                            <td>FPort              </td>
+                            <td>  {{fport6}}     </td>
+                            <td>TPort              </td>
+                            <td > {{tport6}}      </td>
+                        </tr>
+                        <tr>
+                            <td>Income             </td>
+                            <td > {{income6}}</td>
+                            <td>Number of pieces   </td>
+                            <td >  {{numofpieces6}}    </td>
+                        </tr>
+                    </tbody>
+                </table>
+         </div>
+    </div><!-- Closing of Chart6 -->
+
     </div>
-</div>
+</body>
+
+
+
+
+
 <!-- <app-charts></app-charts>
 <app-messages></app-messages>
  -->
-</div>
-

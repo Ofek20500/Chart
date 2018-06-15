@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Amaranth');
+
+html , body {
+    height: 100%;
+    width: 100%;
+    background: url("./assets/img/Branded_in_sky_hi_res_cropped02.jpg") no-repeat center center fixed ;  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    font-family: 'Amaranth', sans-serif;
+} 

@@ -6,9 +6,6 @@
     
 }
 
-canvas {
-    max-width: 400px;
-}
 
 /* Drop Down menu */
 
@@ -26,8 +23,8 @@ a:hover {
 #menu-toggle{
     display: block;
     position: relative;
-    top: 30px;
-    left: 150px;
+    top: -40px;
+    left: 200px;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
@@ -110,7 +107,7 @@ a:hover {
 }
 
 .cd-accordion-menu {
-    padding-top: 450px;
+    padding-top: 100px;
 }
 
 
@@ -136,6 +133,22 @@ a:hover {
     display: block;
     color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .style {
     color: black;
@@ -186,7 +199,7 @@ button {
 
 
   /****/
-
+/* 
   html {
     margin: 5;
     background: url("../assets/img/Branded_in_sky_hi_res_cropped.jpg") no-repeat center center fixed ;  
@@ -213,7 +226,27 @@ body {
     -o-background-size: cover;
     background-size: cover;
     overflow: hidden;
-}
+} */
+
+/* html , body { 
+    background: url("../assets/img/Branded_in_sky_hi_res_cropped.jpg") no-repeat center center fixed ;  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} */
+
+
+html , body {
+    height: 100%;
+    width: 100%;
+    /* background: url("../assets/img/Branded_in_sky_hi_res_cropped.jpg") no-repeat center center fixed ;  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+    overflow: hidden;
+}  
 
 
 .chart {
@@ -374,19 +407,6 @@ grid-row: 4 / 5; */
 
 
 
-td {
-padding-right: 15px;
-font-size: 16px;
-color: black;
-}
-
-.table {
-padding-top: 15px;
-height: 100px;
-padding-bottom: 1px;
-padding-left: 10px;
-}
-
 
 .product-image {
 background: #fff;
@@ -395,3 +415,99 @@ width: 70%;
 margin-left: 75px;
 
 } 
+
+
+
+
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 630px 630px 610px;
+    grid-gap: 10px;
+    color: #444;
+   
+    
+    
+  }
+  
+  .box {
+    background-color: #fff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 150%;
+    height: 42vh;
+    box-shadow: 6px 5px 6px 0px #f5f5f585;
+    -o-box-shadow: 6px 5px 6px 0px #f5f5f585;
+    -webkit-box-shadow: 6px 5px 6px 0px #f5f5f585;
+    -moz-box-shadow: 6px 5px 6px 0px #f5f5f585;
+    border: 1px solid #E7E7E8;
+  }
+
+  nav {
+      max-width: 100px;
+      margin: 0;
+      max-height: 5vh;
+  }
+
+
+
+
+canvas {
+    max-width: 550px;
+    padding-left:30px;
+}
+
+
+
+tr td {
+    padding-right: 15px;
+    font-size: 16px;
+    color: black;
+    border-bottom: #444 20px;
+
+    }
+    
+    .table {
+    padding-top: 15px;
+    padding-bottom: 1px;
+    padding-left: 10px;
+    width: 100%;
+    }
+
+    table {
+    border-collapse: collapse;
+    }
+
+  
+
+   td {
+        color: black;
+        font-size:24px;
+    }
+
+   td:nth-child(2) {
+    padding-right: 20px;
+    }
+    td:nth-child(3) {
+       
+        border-left: 1px solid black;
+        padding-left: 20px;
+        color: black;
+        font-size:24px;
+    }
+
+    td:nth-child(4) {
+  
+       
+        padding-left: 20px;
+    }
+
+    img {
+       
+        display: block;
+        width: 160px;
+        height: 75px;
+        
+    }
+    
