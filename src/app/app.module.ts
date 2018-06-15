@@ -7,14 +7,12 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { HttpClientModule} from '@angular/common/http';
 
 
-import { ChartsComponent } from './charts/charts.component';
 import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ChartsComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
